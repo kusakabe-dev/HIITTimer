@@ -7,4 +7,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "HIITTimer"
-include ':app'
+include (":app")
