@@ -1,4 +1,4 @@
-package dev.syousa1982.hiittimer
+package net.kusakabetech.hiittimer
 
 import android.os.CountDownTimer
 import androidx.lifecycle.LiveData

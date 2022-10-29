@@ -1,4 +1,4 @@
-package dev.syousa1982.hiittimer.ext
+package net.kusakabetech.hiittimer.ext
 
 import android.app.Activity
 import android.content.Context

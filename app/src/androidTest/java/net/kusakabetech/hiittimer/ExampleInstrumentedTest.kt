@@ -1,4 +1,4 @@
-package dev.syousa1982.hiittimer
+package net.kusakabetech.hiittimer
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

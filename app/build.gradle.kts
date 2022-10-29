@@ -11,7 +11,7 @@ android {
     compileSdk = 30
 
     defaultConfig {
-        applicationId = "dev.syousa1982.hiittimer"
+        applicationId = "net.kusakabetech.hiittimer"
         minSdk = 26
         targetSdk = 30
         versionCode = 1

@@ -1,4 +1,4 @@
-package dev.syousa1982.hiittimer.ui.theme
+package net.kusakabetech.hiittimer.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
