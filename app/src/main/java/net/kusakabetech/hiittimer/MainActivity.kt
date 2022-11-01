@@ -39,7 +39,7 @@ fun TimerApp(
     modifier: Modifier = Modifier
 ) {
     Surface(color = MaterialTheme.colors.background) {
-
+        val typography = MaterialTheme.typography
         Column(
             modifier = Modifier.padding()
         ) {
@@ -69,17 +69,44 @@ fun TimerApp(
                     CircularProgressIndicator(
                         color = Color.Blue,
                         modifier = Modifier.size(250.dp),
-                        progress = 0.75f, // 一旦、決め打ちの数字を入れる
+                        progress = 0.75f, // Todo:ViewModelから取得
                         strokeWidth = 12.dp
                     )
                     Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
-                        ReusableHeaderText(text = "00:00:00")
+                        ReusableHeaderText(text = "00:00:00")// Todo:ViewModelから取得
                     }
                 }
 
             }
 
             Spacer(modifier = Modifier.height(12.dp))
+            
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 2.dp, end = 2.dp),
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                // Todo:テキストを定数化
+                Text(
+                    text = "HOUR",
+                    fontSize = 20.sp,
+                    style = typography.caption
+                )
+                Text(
+                    text = "MIN",
+                    fontSize = 20.sp,
+                    style = typography.caption
+                )
+                Text(
+                    text = "SEC",
+                    fontSize = 20.sp,
+                    style = typography.caption
+                )
+            }
+
+            Spacer(modifier = Modifier.height(6.dp))
         }
     }
 //    val secs = countTimeViewModel.seconds.observeAsState()
